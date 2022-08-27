@@ -29,7 +29,7 @@
                     <h2>a better way to camp</h2>
                 </div>
                 <div class="col-md-4 col-xl-2 mt-4">
-                    <button type="button" data-toggle="modal" data-target="#reserveModal">Reserve Campsite</button>                </div>
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#reserveModal">Reserve Campsite</button>                </div>
             </div>
         </div>
     </header>
@@ -44,8 +44,8 @@
                 <div class="modal-body">
                     <div class="container-fluid">
                         <form>
-                            <div class="row">
-                                <label class="form-group col-form-label col-sm-6">Number of Campers</label>
+                            <div class="form-group row">
+                                <label class="col-form-label col-sm-6">Number of Campers</label>
                                 <div class="col">
                                     <select class="form-control" name="numCampers" id="numCampers">
                                         <option>Select...</option>
@@ -58,10 +58,21 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="row">
-                                <label class="form-group col-form-label col-sm-6" for="date">Date</label>
+                            <div class="form-group row">
+                                <label class="col-form-label col-sm-6" for="date">Date</label>
                                 <div class="col">
                                     <input class="form-control" type="date" id="date" name="date" placeholder="mm/dd/yyyy">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-6 col-form-label" for="siteType">Campsite Type</label>
+                                <div class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-success active">
+                                        <input type="radio" name="siteType" id="siteTent" autocomplete="off" checked> Tent
+                                    </label>
+                                    <label class="btn btn-primary">
+                                        <input type="radio" name="siteType" id="siteRV" autocomplete="off"> RV
+                                    </label>
                                 </div>
                             </div>
                             <div class="row">
